@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/PRANAYGOUR/ecommerce-frontend/issues"
   },
-  "homepage": "https://github.com/PRANAYGOUR/ecommerce-frontend#readme"
+  "homepage": "https://github.com/PRANAYGOUR/ecommerce-frontend#readme",
+  "dependencies": {
+    "firebase": "^12.7.0"
+  }
 }

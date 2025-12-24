@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<header class="header">
+        <h2>ShopEase</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html" class="cart">Cart (<span class="cart-count">0</span>)</a>
+            <a href="auth.html">Login</a>
+        </nav>
+    </header>
+
+<section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+            <img id="product-img" loading="lazy">
+        <div>
+            <h2 id="product-title"></h2>
+            <p id="product-desc"></p>
+            <div class="product-price-quantity">
+                <h3>₹ <span id="product-price"></span></h3>
+                <div class="quantity">
+                    <button id="minus">−</button>
+                    <span id="qty">1</span>
+                    <button id="plus">+</button>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button id="add-to-cart" class="btn-cta">Add to Cart</button>
+                <p id="success-msg"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="scripts/firebase.js"></script>
+
+<script src="scripts/app.js"></script>
+<script src="scripts/product.js"></script>
+</body>
+</html>
